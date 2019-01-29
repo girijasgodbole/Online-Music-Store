@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Billing Address</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script>
+//DB Call to get data
+
+</script>
+<style type="text/css">
+	.table-responsive tbody tr {
+  cursor: pointer;
+}
+.table-responsive .table thead tr th {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.table-responsive .table tbody tr td {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+</style>
+     
+</head>
+<body>
+
+<div id="divPayment2" class="table-responsive">
+  
+</div>
+<div>
+  <button name="btnNewPayment" id="btnNewPayment" class="btn btn-primary" type="button">Add New Payment</button>
+  <button name="btnSavePayment2" id="btnSavePayment2" class="pay btn btn-primary" type="button">Save</button>
+</div>
+<div id="divNewPay" class="form-group" style="overflow-y:scroll;">
+  <img src="https://www.merchantequip.com/image/?logos=v|m|a|d|p|g|dc|me|az|msc|bit|gw|apl|ssp&height=32" alt="Merchant Equipment Store Credit Card Logos"/>
+  <form action="newPayment.php" method="post">
+    Name On Card: <input type="text" class="form-control" name="name"><br>
+    Card Number: <input type="text" class="form-control" name="cardnum"><br>
+    Expiration date: <input type="text" class="form-control" name="expdate"><br>
+    CVV2: <input type="text" class="form-control" name="cvv2"><br>
+    zip: <input type="text" class="form-control" name="zip"><br>
+    <input type="submit" id="btnSubPay"  class="btn btn-primary">
+  </form>
+
+</div>
+	
+</body>
+</html>

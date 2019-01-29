@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<script 
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<meta charset="ISO-8859-1">
+<script src="checkout.js"></script> 
+<title>Music Store Checkout</title>
+</head>
+<body class="body">
+	<h1 style="text-align: center;">Checkout</h1>
+	<div>
+		<div id="divLeftPane" class="col-sm-4">
+		<div id="divBillAddr" style="background-color: beige;">
+			<div class="header">
+				<h3>Billing Address</h3>
+			</div>
+			<div>
+				<div id="divSelectedBillAddr">
+					<p id="pBillAddr">Select a Billing Address</p>
+				</div>
+				<button name="btnGetBillAddr" id="btnGetBillAddr" class="btn btn-primary" type="button">Add/Select Billing Address</button>
+			</div>		
+		</div>
+		<div id="divShipAddr" style="padding-top: 20px;background-color: beige;">
+			<div class="header">
+				<h3>Shipping Address</h3>
+			</div>
+			<div>
+				<div id="divSelectedShipAddr">
+					<p id="pShipAddr">Select a Shipping Address</p>
+				</div>
+				<button name="btnGetShipAddr" id="btnGetShipAddr" class="btn btn-primary" type="button">Add/Select Shipping Address</button>
+			</div>		
+		</div>
+			
+		</div>
+		<div id="divRightPane" class="col-sm-8">
+			<p id="demo" style="font-size: x-small;"></p>
+			<div id="divShipMethod" style="background-color: beige;">
+			<div class="header">
+				<h3>Shipping Method</h3>
+			</div>
+			<div>
+				<div id="divSelectedShipAddr">
+					<p id="pShipAddr">Select a Shipping Method</p>
+				</div>
+				<div >
+				<div >
+					<input type="radio" name="rbtnShip" value="1" id="rbtnShip1" />
+					<label for="radio1">In-Store Pickup ($0.00)</label>
+				</div>
+				<div >
+          			<input type="radio" name="rbtnShip" value="3" id="rbtnShip3" />
+          			<label for="radio1">2nd Day Air ($0.00)</label>
+          		</div>
+          		<div >
+          			<input type="radio" name="rbtnShip" value="2" id="rbtnShip2" />
+          			<label for="radio1">Ground ($0.00)</label>
+          		</div>
+          		<div >
+          			<input type="radio" name="rbtnShip" value="4" id="rbtnShip4" />
+          			<label for="radio1">Next Day Air ($0.00)</label>
+          		</div>
+          			
+          			
+				</div>
+			</div>		
+		</div>
+		<div id="divPayment" style="padding-top: 20px;background-color: beige;">
+			<div class="header">
+				<h3>Payment Method</h3>
+			</div>
+			<div>
+				<div id="divSelectedPayment">
+					<p id="pPayMethod">Select Payment Method</p>
+				</div>
+				<div>
+					
+				</div>
+			</div>		
+		</div>
+		</div>
+	</div>	
+<!-- Show modal popup -->
+<!-- Modal - Billing Address -->
+<div id="mdlBilling" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Select Address</h2>
+    </div>
+    <div class="modal-body" style="overflow-y:auto;max-height: 400px;">
+      <p>Please Select Address</p>
+      <div w3-include-html="billingaddr.html"></div> 
+      <script type="text/javascript">
+w3.includeHTML();
+</script>
+    </div>
+    <div class="modal-footer">
+      <!--<h3>Message: Select Address for</h3>-->
+    </div>
+  </div>
+
+</div>
+
+<script>
+
+</script>
+</body>
+</html>

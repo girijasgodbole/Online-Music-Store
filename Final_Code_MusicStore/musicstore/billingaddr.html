@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Billing Address</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script>
+//DB Call to get data
+
+</script>
+<style type="text/css">
+	.table-responsive tbody tr {
+  cursor: pointer;
+}
+.table-responsive .table thead tr th {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.table-responsive .table tbody tr td {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+</style>
+     
+</head>
+<body>
+
+<div id="divBilling" class="table-responsive">
+  <table class="table table-hover table-bordered">
+    <thead>
+      <tr>
+        <th>Courier</th>
+        <th>Service</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <input type="radio" name="radios" value="1" id="radio1" />
+          <label for="radio1">TIKI</label>
+        </td>
+        <td>Regular Shipping</td>
+      </tr>
+      <tr>
+        <td>
+          <input type="radio" name="radios" value="2" id="radio2" />
+          <label for="radio2">JNE</label>
+        </td>
+        <td>Express Shipping</td>
+      </tr>
+    </tbody>
+  </table> 
+</div>
+<div>
+  <button name="btnNewAddr" id="btnNewAddr" class="btn btn-primary" type="button">Create New Address</button>
+   <button name="btnSaveAddr" id="btnSaveAddr" class="btn btn-primary" type="button">Save Billing</button>
+   <button name="btnSaveAddrShip" id="btnSaveAddrShip" class="btn btn-primary" type="button">Save Shipping</button>
+</div>
+<div id="divNewAddr" class="form-group" style="overflow-y:scroll;">
+  <form action="newAddress.php" method="post">
+    First Name: <input type="text" class="form-control" name="fname"><br>
+    Last Name: <input type="text" class="form-control" name="lname"><br>
+    E-mail: <input type="text" class="form-control" name="email"><br>
+    Country: <input type="text" class="form-control" name="country"><br>
+    State: <input type="text" class="form-control" name="state"><br>
+    City: <input type="text" class="form-control" name="city"><br>
+    Address 1: <input type="text" class="form-control" name="addr1"><br>
+    Address 2: <input type="text" class="form-control" name="addr2"><br>
+    Zip / Postal Code: <input type="text" class="form-control" name="zipcode"><br>
+    Phone number: <input type="text" class="form-control" name="cell"><br>
+    <input type="checkbox" name="cbxShipping" value="Shipping">Ship to same address<br>
+    <input type="submit" class="btn btn-primary">
+  </form>
+
+</div>
+	
+</body>
+</html>

@@ -1,0 +1,49 @@
+<html>
+<head>
+  <title>Adding albums</title>
+</head>
+
+<body>
+  <h1>Music store - New Album Entry</h1>
+
+  <form action="insert_item.php" method="post">
+    <table border="0">
+	  <tr>
+        <td>Item ID</td>
+         <td><input type="text" name="itemid"></td>
+      </tr>
+      <tr>
+        <td>Type</td>
+        <td> <input type="text" name="type"></td>
+      </tr>
+	  <tr>
+        <td>album name</td>
+        <td> <input type="text" name="album_name"></td>
+      </tr>
+	  <tr>
+        <td>artist name</td>
+        <td> <input type="text" name="artist_name"></td>
+      </tr>
+	  <tr>
+        <td>track name</td>
+        <td> <input type="text" name="track_name"></td>
+      </tr>
+	  <tr>
+        <td>price</td>
+        <td> <input type="text" name="price"></td>
+      </tr>
+	  <tr>
+        <td>Genres</td>
+        <td> <input type="text" name="genres"></td>
+      </tr>
+	  <tr>
+        <td>Active</td>
+        <td> <input type="text" name="active" value="1"></td>
+      </tr
+      <tr>
+        <td colspan="2"><input type="submit" value="Add album"></td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Tracks</title>
+</head>
+<body>
+<form action="track.php" method="post">
+	Choose Search Type:<br />
+    <select name="searchtype">
+      <option value="album_name">Album
+      <option value="track_name">Name
+    </select>
+    <br />
+    Enter Search Term:<br />
+    <input name="searchterm" type="text" size="40">
+	<br />
+	<input type="radio" name="privilege" value="admin"> Administrator <br>
+    <input type="radio" name="privilege" value="non-admin" checked> Non-Administrator<br>
+    <input type="submit" name="submit" value="Search">
+</form>
+
+</body>
+</html>
